@@ -133,6 +133,15 @@ section {
     font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 .logo:hover {
@@ -212,7 +221,10 @@ section {
     align-items: center;
     background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
     padding-top: 80px;
+    position: relative;
+    overflow: hidden;
 }
+
 
 .hero-content {
     max-width: 1200px;
@@ -222,6 +234,8 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-2xl);
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-text h1 {
